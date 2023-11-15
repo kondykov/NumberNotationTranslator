@@ -76,7 +76,5 @@ namespace NumberNotationTranslatorClassLibrary
             //записываем остатки от деления в обратном порядке
             return 0; 
         }
-
-
     }
 }

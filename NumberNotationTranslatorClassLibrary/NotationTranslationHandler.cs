@@ -15,7 +15,6 @@ namespace NumberNotationTranslatorClassLibrary
         private NotationTranslator fractTranslator;
         private NotationTranslator integerTranslator;
 
-
         public NotationTranslationHandler(){}
 
         public NotationTranslationHandler(double number, int notationFrom, int notationTo)
@@ -29,10 +28,8 @@ namespace NumberNotationTranslatorClassLibrary
             fractTranslator = new NotationTranslator(fractPart, notationFrom, notationTo);
         }
 
-
         public int Translate()
         {
-
             int intAnswer = integerTranslator.FromNotationFromToDecimal();
             integerTranslator.Number = intAnswer;
 
@@ -47,7 +44,5 @@ namespace NumberNotationTranslatorClassLibrary
 
             return integerTranslator.Number+ fractTranslator.Number;
         }
-
-
     }
 }
