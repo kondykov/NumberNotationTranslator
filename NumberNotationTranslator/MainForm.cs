@@ -23,7 +23,7 @@ namespace NumberNotationTranslator
         /// </summary>
         /// <param name="sender">Элемент управления, который вызвал событие</param>
         /// <param name="e">Параметры события</param>
-        private void button1_Click(object sender, EventArgs e)
+        private void SubmitBtn_Click(object sender, EventArgs e)
         {
             //Получаем доступ к элементу управления, который вызвал событие
             //Button button = sender as Button;
@@ -34,13 +34,10 @@ namespace NumberNotationTranslator
 
             translationHandler = GetValues(translationHandler);
 
-
             if(translationHandler != null)
             {
                 int answer = translationHandler.Translate();
-
                 textBoxResult.Text = Convert.ToString(answer);
-
             }
         }
 
@@ -55,8 +52,6 @@ namespace NumberNotationTranslator
                 translationHandler =
                         new NotationTranslationHandler(inputNumber,
                         notationFrom, notationTo);
-
-
                 return translationHandler;
             }
             catch

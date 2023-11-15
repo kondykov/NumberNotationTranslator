@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBoxInputNumber = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SubmitBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxNotationFrom = new System.Windows.Forms.TextBox();
             this.textBoxNotationTo = new System.Windows.Forms.TextBox();
@@ -48,16 +48,16 @@
             this.textBoxInputNumber.Size = new System.Drawing.Size(482, 50);
             this.textBoxInputNumber.TabIndex = 0;
             // 
-            // button1
+            // SubmitBtn
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(548, 272);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 50);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Вычислить";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.SubmitBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SubmitBtn.Location = new System.Drawing.Point(548, 272);
+            this.SubmitBtn.Name = "SubmitBtn";
+            this.SubmitBtn.Size = new System.Drawing.Size(122, 50);
+            this.SubmitBtn.TabIndex = 3;
+            this.SubmitBtn.Text = "Вычислить";
+            this.SubmitBtn.UseVisualStyleBackColor = true;
+            this.SubmitBtn.Click += new System.EventHandler(this.SubmitBtn_Click);
             // 
             // label1
             // 
@@ -135,7 +135,7 @@
             this.Controls.Add(this.textBoxNotationTo);
             this.Controls.Add(this.textBoxNotationFrom);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.SubmitBtn);
             this.Controls.Add(this.textBoxInputNumber);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -148,7 +148,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBoxInputNumber;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button SubmitBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxNotationFrom;
         private System.Windows.Forms.TextBox textBoxNotationTo;
