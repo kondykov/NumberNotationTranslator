@@ -56,7 +56,7 @@ namespace NumberNotationTranslator
             }
             catch
             {
-                MessageBox.Show("Неверно указаны значения цветов RGB", "Ошибка",
+                MessageBox.Show("Неверно указаны значения!", "Ошибка",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }

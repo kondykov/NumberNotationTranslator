@@ -123,11 +123,11 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Перевести в";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 408);
+            this.ClientSize = new System.Drawing.Size(873, 420);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -138,7 +138,7 @@
             this.Controls.Add(this.SubmitBtn);
             this.Controls.Add(this.textBoxInputNumber);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Перевод чисел из одной системаы счисления в другую";
             this.ResumeLayout(false);
             this.PerformLayout();
