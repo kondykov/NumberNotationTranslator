@@ -19,30 +19,11 @@ namespace NumberNotationTranslatorClassLibrary
 
         public NotationTranslationHandler(double number, int notationFrom, int notationTo)
         {
-            int intPart = (int)Math.Truncate(number);
-            //подумать как брать дробную часть.
-            //Можно использовать строку. Отбросить "0," и остальное брать как дробную часть
-            int fractPart = (int)(number - (int)Math.Truncate(number));
 
-            integerTranslator = new NotationTranslator(intPart, notationFrom, notationTo);
-            fractTranslator = new NotationTranslator(fractPart, notationFrom, notationTo);
-        }
 
         public int Translate()
         {
-            int intAnswer = integerTranslator.FromNotationFromToDecimal();
-            integerTranslator.Number = intAnswer;
 
-            intAnswer = integerTranslator.FromDecimalToNotationTo();
-            integerTranslator.Number = intAnswer; 
-            
-            int fractAnswer = fractTranslator.FromNotationFromToDecimal();
-            fractTranslator.Number = fractAnswer;
-
-            fractAnswer = fractTranslator.FromDecimalToNotationTo();
-            fractTranslator.Number = fractAnswer;
-
-            return integerTranslator.Number+ fractTranslator.Number;
         }
     }
 }
