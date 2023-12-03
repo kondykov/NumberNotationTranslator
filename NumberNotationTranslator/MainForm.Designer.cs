@@ -38,6 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.DecPlacesTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxInputNumber
@@ -123,11 +125,31 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Перевести в";
             // 
-            // Form1
+            // DecPlacesTextBox
+            // 
+            this.DecPlacesTextBox.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.DecPlacesTextBox.Location = new System.Drawing.Point(33, 175);
+            this.DecPlacesTextBox.Name = "DecPlacesTextBox";
+            this.DecPlacesTextBox.Size = new System.Drawing.Size(482, 50);
+            this.DecPlacesTextBox.TabIndex = 14;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(27, 140);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(267, 32);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Точность вычислений ";
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(873, 408);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.DecPlacesTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -138,7 +160,7 @@
             this.Controls.Add(this.SubmitBtn);
             this.Controls.Add(this.textBoxInputNumber);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Перевод чисел из одной системаы счисления в другую";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,6 +178,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox DecPlacesTextBox;
+        private System.Windows.Forms.Label label5;
     }
 }
 
